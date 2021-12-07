@@ -11,14 +11,14 @@ public enum Perfil {
 		this.codigo = codigo;
 		this.decricao = decricao;
 	}
-	public Integer getCodigo() {
+	public Perfil getCodigo() {
 		return codigo;
 	}
 	public String getDecricao() {
 		return decricao;
 	}
 	
-	private static Perfil toEnum(Integer cod) {
+	public static Perfil toEnum(Perfil cod) {
 		if(cod == null) {
 			return null;
 		}
